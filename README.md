@@ -2,6 +2,8 @@
 
 This is my personal website to showcase my skillset involving both software development and photography.
 
+It has been built using the Next.js framework.
+
 ## Getting Started
 
 First, run the development server:
