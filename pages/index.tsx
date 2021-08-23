@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Center } from '@chakra-ui/react'
+import { Box, Center, Button } from '@chakra-ui/react'
 
 export default function Home() {
+  const greeting: string = "Hello! My name is Maximo Machado and I am currently a Junior studying Computer Science at MIT. I'd love it if you would checkout some of the projects I've worked on."
+
   return (
     <>
       <Head>
         <title>Maximo Machado</title>
-        <meta name="description" content="A website featuring software developer and photographer Maximo Machado." />
+        <meta name="description" content={greeting} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,13 +22,8 @@ export default function Home() {
             height={100}
           />
           <Box >
-            <h1>
-              Maximo Machado '23
-            </h1>
-            <p>
-              Hello! I'm currently majoring in Computer Science at MIT.
-              Software development and programming is something I've loved since I was a kid, budding from my interests in playing and creating video games.
-            </p>
+            <p>{greeting}</p>
+            <Button>Projects</Button>
           </Box >
         </Center >
       </main>
